@@ -1,4 +1,4 @@
-package com.api.digibank;
+package com.digibank.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
