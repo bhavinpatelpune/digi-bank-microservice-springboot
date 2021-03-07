@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Accounts Data</title>
+</head>
+<body>
+<h1>Account Form</h1>
+
+<form th:action="@{/saveAccount}" th:object="${account}">
+Account Number: <input type="text" th:field="*{accountNumber}" />
+Customer Name:  <input type="text" th:field="*{customerName}" />
+<br/>
+Action:
+<br/>
+<input type="submit" value="Save" />
+<input type="reset" value="Reset"  />
+
+</form>
+</body>
+</html>

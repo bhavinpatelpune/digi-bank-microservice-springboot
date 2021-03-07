@@ -1,5 +1,6 @@
 package com.payments.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -14,8 +15,13 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class Account {
+public class Account implements Serializable {
 	
+	/**
+	 * Serializable variable
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long accountNumber;
